@@ -204,6 +204,7 @@ namespace PdfApi.Controllers
             sb.Append("</HTML>");
 
             string sHtml = sb.ToString();
+
             PdfDocument pdf = PdfGenerator.GeneratePdf(sHtml, PageSize.A4);
             return pdf;
         }
